@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .item {
+    background-color: rgba(89, 79, 79, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    border-bottom: #000 solid 1px; /* Adjust border thickness as needed */
+    /* Set a fixed width for each item */
+    width: 200px; /* Adjust width as needed */
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 5px;
+    margin-right: 30px;
+  }
+
+  img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    /* Style the link for a better appearance */
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Set link color */
+  }
+
+  h3:hover {
+    /* Style the link on hover */
+    color: #000; /* Change color on hover */
+  }

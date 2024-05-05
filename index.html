@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Mentor Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mentor
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Updated: Mar 19 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    /* Custom CSS for Contact Us section */
+    .contact-us {
+      background-color: #f9f9f9;
+      padding: 50px 0;
+    }
+
+    .contact-us h3 {
+      color: #333;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .contact-us p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .contact-us p strong {
+      color: #000;
+    }
+
+    .contact-us .contact-info {
+      margin-top: 30px;
+    }
+
+    /* Custom CSS for Copyright section */
+    .copyright-container {
+      background-color: lightgrey;
+      color: #fff;
+      padding: 20px 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .copyright-content {
+      max-width: 100%;
+      width: 100%;
+    }
+    .course-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .course-box {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+  
+  .course-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .course-info {
+    padding: 10px;
+  }
+  
+  .course-info h3 {
+    margin-top: 0;
+  }
+  
+  .course-info p {
+    margin-bottom: 10px;
+  }
+  
+  .author-info {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  
+  
+  .author-info span {
+    margin-right: 10px;
+  }
+  
+  .price {
+    margin-left: auto;
+    color: #ffc107;
+    font-weight: bold;
+  }
+  
+  .popular-courses-line {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #333;
+    position: relative;
+  }
+  .popular-courses-line2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #333;
+    position: relative;
+  }
+  /* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+/* Add FontAwesome icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+</style>
+</head>
+
+<body>
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="">Mentor</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown has-dropdown"><a href="#"><span>Dashboard</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="https://dashboard.udiseplus.gov.in/#/home"><span>School Education Dashboard</span></a>
+              <li><a href="https://dashboard.aishe.gov.in/hedirectory/#/institutionDirectory"><span>Higher Education Dashboard</span></a>  
+            </ul>    
+          <li class="dropdown has-dropdown"><a href="#"><span>Scholarships
+
+          </span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown has-dropdown"><a href="#"><span>After 10th</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="./science.html">Science</a></li>
+                  <li><a href="./commerce.html">Commerce</a></li>
+                  <li><a href="./humanities.html">Humanities</a></li>
+                </ul>
+              </li>
+              <li class="dropdown has-dropdown"><a href="#"><span>After 12th/Under Graduation</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="./B.tech.html">B.Tech.</a></li>
+                  <li><a href="./ba.html">B.A.</a></li>
+                  <li><a href="./bcom.html">B.Com.</a></li>
+                  <li><a href="./bsc.html">B.Sc.</a></li>
+                  <li><a href="./mbbs.html">MBBS</a></li>
+                </ul>
+              </li>
+              <li class="dropdown has-dropdown"><a href="#"><span>Post Graduation</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="mtech.html">M.Tech</a></li>
+                  <li><a href="mba.html">MBA</a></li>
+                  <li><a href="msc.html">M.Sc.</a></li>
+                  <li><a href="mbbs.html">PG(Doctor)</a></li>
+           
+                </ul>
+              </li>
+              
+            </ul>
+          </li>
+         <li><a href="faq.html" >FAQs</a></li>
+         <li class="dropdown has-dropdown"><a href="#"><span>Entrance Exams
+
+         </span> <i class="bi bi-chevron-down"></i></a>
+           <ul>
+             <li ><a href="jee.html"><span>JEE</span> <i class="bi bi-chevron-down"></i></a>
+               
+             </li>
+             <li ><a href="#"><span>NEET</span> <i class="bi bi-chevron-down"></i></a>
+               
+             </li>
+             <li><a href="#"><span>UPSC</span> <i class="bi bi-chevron-down"></i></a>
+               
+             </li>
+             <li ><a href="#"><span>GATE</span> <i class="bi bi-chevron-down"></i></a>
+               
+             </li>
+             <li ><a href="#"><span>CLAT</span> <i class="bi bi-chevron-down"></i></a>
+               
+             </li>
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="about.html">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <div class="container">
+        <h2 data-aos="fade-up" data-aos-delay="100" class="">Learning Today,<br>Leading Tomorrow</h2>
+        <p data-aos="fade-up" data-aos-delay="200">We are a dedicated team committed to empowering women through<br> education, particularly in higher studies</p>
+        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+          <a href="about.html" class="btn-get-started">Get Started</a>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- Footer -->
+    <footer id="footer" class="footer position-relative">
+
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center mt-4">
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="toppers.css">
+</head>
+<body>
+    <div class="popular-courses-line">Our Academic Toppers for 23-24</div>
+    <div class="popular-courses-line2">JEE Main 2024 Toppers</div>
+<div class="course-container">
+     
+    <div class="course-box">
+      <div class="course-image">
+        <img src="jee1.jpg" style="width:200px;" alt="Course Image 1">
+      </div>
+      <div class="course-info">
+        <h3>Muthu R</h3>
+        <p> B.Arch/B.Planning (Tamil Nadu)</p>
+      </div>
+      <div class="author-info">
+        <a href="https://www.youtube.com/watch?v=l1v3Kw_soPA" class="price">Interview</a>         
+        
+      </div>
+    </div>
+     
+    <div class="course-box">
+     
+      <div class="course-image">
+        <img src="jee2.jpg" style="width:200px;" alt="Course Image 2">
+      </div>
+      <div class="course-info">
+        <h3>Kolasani Saketh Pranav</h3>
+        <p> B.Arch/B.Planning (Andhra Pradesh).</p>
+      </div>
+      <div class="author-info">
+        <a href="https://engineering.careers360.com/" class="price">Interview</a>         
+        
+      </div>
+    </div>
+  
+    <div class="course-box">
+      <div class="course-image">
+        <img src="jee3.jpg" style="width:200px;" alt="Course Image 3">
+      </div>
+      <div class="course-info">
+        <h3>Dhanukonda Srinidhi</h3>
+        <p> B.Arch/B.Planning (Andhra Pradesh)</p>
+      </div>
+      <div class="author-info">
+        <a href="https://engineering.careers360.com/" class="price">Interview</a>   
+      </div>
+    </div>
+  </div>
+
+  <div class="popular-courses-line2">NEET Main 2024 Toppers</div>
+  <div class="course-container">
+       
+      <div class="course-box">
+        <div class="course-image">
+          <img src="neet1.jpg"  style="width:200px;" alt="Course Image 1">
+        </div>
+        <div class="course-info">
+          <h3>Prabanjan J</h3>
+          <p>  (AIR 1) - Tamil Nadu</p>
+        </div>
+        <div class="author-info">
+          <a href="https://www.collegedekho.com/" class="price">Interview</a>         
+          
+        </div>
+      </div>
+       
+      <div class="course-box">
+       
+        <div class="course-image">
+          <img src="neet2.jpg" style="width:200px;" alt="Course Image 2">
+        </div>
+        <div class="course-info">
+          <h3>Kaustav Bauri*</h3>
+          <p> (AIR 1) - Andhra Pradesh</p>
+        </div>
+        <div class="author-info">
+          <a href="https://www.collegedekho.com/" class="price">Interview</a>         
+          
+        </div>
+      </div>
+    
+      <div class="course-box">
+        <div class="course-image">
+          <img src="neet3.jpg" style="width:200px;" alt="Course Image 3">
+        </div>
+        <div class="course-info">
+          <h3>Bora Varun Chakravarthi</h3>
+          <p> (AIR 2) - Andhra Pradesh</p>
+        </div>
+        <div class="author-info">
+          <a href="https://engineering.careers360.com/" class="price">Interview</a>   
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
+        <!-- Contact Us Section -->
+        <section class="contact-us">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 offset-lg-2">
+                <h3>Contact Us</h3>
+                <p>Feel free to reach out to us via email:</p>
+                <p><strong>Email:</strong> office@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Contact Us Section -->
+
+        <footer>
+          <div class="footer-container">
+            <div class="footer-section">
+              <h3 style="color:lightgreen">Learning Resources</h3>
+              <ul>
+                <li>Best Courses Online</li>
+                <li>Practice Problems</li>
+                <li>Board Toppers</li>
+                <li>FAQ's</li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3 style="color:lightgreen">Associating Partner </h3>
+              <ul>
+                <li>PMINDIA</li>
+                <li>data.gov.in</li>
+                <li>Digital India</li>
+                <li>MyGovt</li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3 style="color:lightgreen">More</h3>
+              <ul>
+                <li>Mentor For Colleges</li>
+                <li>Contact Us</li>
+                <li>Code Of Conduct</li>
+                <li>User Ranklist</li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3 style="color:lightgreen">Usage Policy</h3>
+              <ul>
+                <li>Privacy policy</li>
+                <li>Terms</li>
+                <li>Other Policy</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>www.MENTOR.com</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-medium"></i></a>
+              <a href="#"><i class="fa fa-quora"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </footer>
+        <!-- End Copyright Section -->
+
+      </div>
+
+    </footer>
+
+  </main>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
